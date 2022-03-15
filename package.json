@@ -1,0 +1,33 @@
+{
+  "name": "gitpod-express-redis",
+  "version": "0.0.1",
+  "description": "Express Quick Start for Redis on Gitpod",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonprickett/gitpod-express-redis.git"
+  },
+  "keywords": [
+    "redis",
+    "express"
+  ],
+  "author": "Redis Developer",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/simonprickett/gitpod-express-redis/issues"
+  },
+  "homepage": "https://github.com/simonprickett/gitpod-express-redis#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "redis": "^4.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
