@@ -3,7 +3,7 @@ ports:
     onOpen: open-preview
 
 tasks:
-  - name: Start Redis tack
+  - name: Start Redis Stack
     init: |
      docker-compose pull
     command: |

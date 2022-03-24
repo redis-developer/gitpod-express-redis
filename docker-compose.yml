@@ -5,7 +5,5 @@ services:
     image: redis/redis-stack:latest
     expose:
       - "6379"
-      - "8001"
     ports:
       - "6379:6379"
-      - "8001:8001"
