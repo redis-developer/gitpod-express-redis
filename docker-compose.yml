@@ -3,7 +3,5 @@ services:
   redis:
     container_name: redis-stack
     image: redis/redis-stack:latest
-    expose:
-      - "6379"
     ports:
       - "6379:6379"
