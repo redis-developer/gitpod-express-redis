@@ -1,8 +1,10 @@
 # A Node.js Express / Redis Stack template on Gitpod
 
-This is a [Node.js](https://nodejs.org/) [Express](http://expressjs.com/) template configured for ephemeral development environments on [Gitpod](https://www.gitpod.io/) with [Redis Stack](https://redis.io/docs/stack/) using the [node-redis](https://github.com/redis/node-redis) client and RedisInsight visualization tool.  You can also run this application locally if you prefer.
+This is a [Node.js](https://nodejs.org/) [Express](http://expressjs.com/) template configured for ephemeral development environments on [Gitpod](https://www.gitpod.io/) with [Redis Stack](https://redis.io/docs/stack/) using the [node-redis](https://github.com/redis/node-redis) client and [RedisInsight](https://github.com/RedisInsight/RedisInsight) visualization tool.  You can also run this application locally if you prefer.
 
 The application is a basic counter that stores a value in Redis in the `mycounter` key.  It's intended as a start point for building your own Express applications that use Redis.
+
+If you prefer to work with Python, we've also built this same application using Python and the Flask framework.  [Check it out here](https://github.com/simonprickett/gitpod-flask-redis).
 
 ## Quick Start
 
@@ -12,8 +14,8 @@ There are two ways of running this application - entirely in the cloud with Gitp
 
 When using Gitpod, the only things you need are:
 
-* A modern browser (we have tested with Google Chrome).
-* A GitHub account.
+* A modern browser (we have tested with [Google Chrome](https://www.google.com/chrome/)).
+* A [GitHub](https://github.com) account.
 
 Click the button below to start a new cloud development environment using Gitpod:
 
@@ -53,15 +55,15 @@ The application should show that the current value of the counter is 0, and Redi
 
 To run the application locally you'll need to install the following:
 
-* The git command line tools.
-* A recent version of Node.js (use the current LTS / Long Term Stable version where possible).  The application has been tested on Node v16.4.2.
-* Docker Desktop (to run a Redis Stack container) or a local install of Redis Stack.
-* Your favorite IDE if you want to edit / read the code.
+* The [git command line tools](https://git-scm.com/downloads).
+* A recent version of [Node.js](https://nodejs.org/) (use the current LTS / Long Term Stable version where possible).  The application has been tested on Node v16.4.2.
+* [Docker Desktop](https://www.docker.com/products/docker-desktop/) (to run a Redis Stack container) or a local install of Redis Stack ([installation options here](https://redis.io/docs/stack/get-started/install/)).
+* Your favorite IDE if you want to edit / read the code (we like [VS Code](https://code.visualstudio.com/)).
 
 First, clone the repo and install dependencies:
 
 ```bash
-$ git clone TODO.git
+$ git clone https://github.com/simonprickett/gitpod-flask-redis.git
 $ cd gitpod-express-redis
 $ npm install
 ```
@@ -102,11 +104,30 @@ $ docker-compose down
 
 ## How the Application Works
 
-TODO
-
-## What's in Redis Stack?
+Before diving into code, let's first try out the application and see what data is stored in Redis.
 
 TODO
 
+### Front End
 
+The application's front end isn't our focus here.  It's a simple web application built with Bulma and vanilla JavaScript.  The JavaScript that handles button presses is contained in `static/app.js` and the HTML can be found in `views/homepage.ejs` - it's a simple [EJS template](https://simonprickett-gitpodexpr-eamwc2bab7h.ws-eu38.gitpod.io/).  There are no CSS files in this repo, the CSS and Font Awesome JS files that Bulma uses are served from a CDN.
 
+### Back End
+
+Now let's look at the code in `app.js` to see how to use Node Redis to connect to Redis Stack.
+
+TODO
+
+## What Capabilities does Redis Stack have?
+
+TODO
+
+## Additional Resources
+
+Looking to learn more about Redis? Here's some useful resources:
+
+* Chat with us and get your questions answered on the [Redis Discord server](https://discord.gg/redis).
+* Subscribe to our [YouTube channel](https://www.youtube.com/c/Redisinc).
+* [redis.io](https://redis.io/) - Docmentation and reference materials.
+* [developer.redis.com](https://developer.redis.com) - the official Redis Developer Site.
+* [Redis University](https://university.redis.com) - free online Redis courses.
