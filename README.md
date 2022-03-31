@@ -106,7 +106,10 @@ $ docker-compose down
 
 Before diving into code, let's first try out the application and see what data is stored in Redis.
 
-TODO
+* Initially, there's nothing in Redis and the application shows the counter's value to be 0.
+* Pressing the "Increment" button adds one to the counter's current value, which is stored in a key named "mycounter" in Redis.
+* Press "Increment" a few times, then refresh your RedisInsight tab's view of the database to see that a key named "mycounter" has been added, and that it's value matches that shown in the application front end.
+* Press the "Reset" button, then refresh your RedisInsight tab's view of the database.  Note that the "mycounter" key has now been deleted.
 
 ### Front End
 
