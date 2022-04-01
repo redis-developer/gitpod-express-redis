@@ -125,7 +125,23 @@ TODO
 
 #### Home Page
 
-TODO
+The home page is also the application's only page, and it's rendered like this:
+
+```javascript
+app.get('/', async (req, res) => {
+  // Get the current counter value.
+  let count = await client.get(COUNTER_KEY_NAME);
+  if (count === null) {
+    count = 0;
+  }
+  // Render the home page with the current counter value.
+  return res.render('homepage', { count });
+});
+```
+
+Here, we use the Redis `GET` command to get the value stored at our counter's key, if any.  If the key doesn't exist yet (Redis returns `null`), we set return an initial value of `0`.  Note that we don't write this to Redis as there's no need (our increment button code will deal with that).
+
+Finally, we render out the `homepage` EJS template (in `views/homepage.ejs`), passing it the value of `count` - this makes sure that when the homepage is rendered, the current value of the counter is there.
 
 #### Pressing the Increment Button
 
