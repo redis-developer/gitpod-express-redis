@@ -121,7 +121,20 @@ Now let's look at the code in `app.js` to see how to use Node Redis to connect t
 
 #### Initializing Express and Redis 
 
-TODO
+This is a regular Express application - so we initialize Express and tell it to use EJS as the template engine and the `views` folder as the location to get templates from.  Additionally we'll tell Express to serve static files for this application the only static file is the front end's JavaScript `/static/app.js`) from the `static` folder.  Finally, we'll start the Express server on port 5000:
+
+```javascript
+const app = express();
+app.set('views', new URL('./views', import.meta.url).pathname);
+app.set('view engine', 'ejs');
+app.use(express.static('static'));
+...
+app.listen(5000, () => {
+  console.log('Server listening on port 5000.');
+});
+```
+
+TODO Redis...
 
 #### Home Page
 
