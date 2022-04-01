@@ -157,7 +157,7 @@ app.get('/incr', async (req, res) => {
 });
 ```
 
-The [Redis `INCRBY`](https://redis.io/commands/incrby/) command atomically incrememnts the numeric value stored at a given key by a specified amount.  If the key doesn't exist, Redis creates it for us (this is why we don't need to store an initial value of 0 in Redis in the home page route).  `INCRBY` returns the new value stored at the key, and that's what we send back to the front end.
+The [Redis `INCRBY`](https://redis.io/commands/incrby/) command atomically increments the numeric value stored at a given key by a specified amount.  If the key doesn't exist, Redis creates it for us (this is why we don't need to store an initial value of 0 in Redis in the home page route).  `INCRBY` returns the new value stored at the key, and that's what we send back to the front end.
 
 #### Pressing the Reset Button
 
