@@ -149,7 +149,17 @@ TODO
 
 #### Pressing the Reset Button
 
-TODO
+When the Reset button is pressed in the front end, a request is sent to `/reset`, which is handled by the following code:
+
+```javascript
+app.get('/reset', async (req, res) => {
+  // Reset by just deleting the key from Redis.
+  await client.del(COUNTER_KEY_NAME);
+  return res.json({ count: 0 });
+});
+```
+
+To reset the counter, we delete its key from Redis, then return 0 to the front end.  The front end JavaScript then updates the displayed value for the counter.
 
 ## Making Changes to the Application
 
