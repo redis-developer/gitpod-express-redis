@@ -134,7 +134,18 @@ app.listen(5000, () => {
 });
 ```
 
-TODO Redis...
+In order to use Redis in our application, we need to create a client and wait for it to connect to the Redis server:
+
+```javascript
+import { createClient } from 'redis';
+...
+const client = createClient({
+  host: 'localhost',
+  port: '6379'
+});
+...
+await client.connect();
+```
 
 #### Home Page
 
