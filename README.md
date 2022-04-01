@@ -145,7 +145,19 @@ Finally, we render out the `homepage` EJS template (in `views/homepage.ejs`), pa
 
 #### Pressing the Increment Button
 
-TODO
+When the Increment button is pressed in the front end, a request is sent to `/incr`, which is handled by the following code:
+
+```javascript
+app.get('/incr', async (req, res) => {
+  // Atomically add one to the counter in Redis.
+  // If they key doesn't exist, Redis will create it with
+  // an initial value of 1.
+  const count = await client.incrBy(COUNTER_KEY_NAME, 1);
+  return res.json({ count });
+});
+```
+
+The [Redis `INCRBY`](https://redis.io/commands/incrby/) command atomically incrememnts the numeric value stored at a given key by a specified amount.  If the key doesn't exist, Redis creates it for us (this is why we don't need to store an initial value of 0 in Redis in the home page route).  `INCRBY` returns the new value stored at the key, and that's what we send back to the front end.
 
 #### Pressing the Reset Button
 
