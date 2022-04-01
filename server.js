@@ -22,7 +22,7 @@ app.get('/incr', async (req, res) => {
   // Atomically add one to the counter in Redis.
   // If they key doesn't exist, Redis will create it with
   // an initial value of 1.
-  const count = await client.incr(COUNTER_KEY_NAME, 1);
+  const count = await client.incrBy(COUNTER_KEY_NAME, 1);
   return res.json({ count });
 });
 
