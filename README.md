@@ -4,7 +4,7 @@ This is a [Node.js](https://nodejs.org/) [Express](http://expressjs.com/) templa
 
 The application is a basic counter that stores a value in Redis in the `mycounter` key.  It's intended as a start point for building your own Express applications that use Redis.
 
-If you prefer to work with Python, we've also built this same application using Python and the Flask framework.  [Check it out here](https://github.com/simonprickett/gitpod-flask-redis).
+If you prefer to work with Python, we've also built this same application using Python and the Flask framework.  [Check it out here](https://github.com/redis-developer/gitpod-flask-redis).
 
 ## Quick Start
 
@@ -19,7 +19,7 @@ When using Gitpod, the only things you need are:
 
 Click the button below to start a new cloud development environment using Gitpod:
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/simonprickett/gitpod-express-redis)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/redis-developer/gitpod-express-redis)
 
 If you're using Gitpod for the first time, you'll need to authorize it to work with your GitHub account.
 
@@ -63,7 +63,7 @@ To run the application locally you'll need to install the following:
 First, clone the repo and install dependencies:
 
 ```bash
-$ git clone https://github.com/simonprickett/gitpod-flask-redis.git
+$ git clone https://github.com/redis-developer/gitpod-flask-redis.git
 $ cd gitpod-express-redis
 $ npm install
 ```
@@ -113,7 +113,7 @@ Before diving into code, let's first try out the application and see what data i
 
 ### Front End
 
-The application's front end isn't our focus here.  It's a simple web application built with Bulma and vanilla JavaScript.  The JavaScript that handles button presses is contained in `static/app.js` and the HTML can be found in `views/homepage.ejs` - it's a simple [EJS template](https://simonprickett-gitpodexpr-eamwc2bab7h.ws-eu38.gitpod.io/).  There are no CSS files in this repo, the CSS and Font Awesome JS files that Bulma uses are served from a CDN.
+The application's front end isn't our focus here.  It's a simple web application built with Bulma and vanilla JavaScript.  The JavaScript that handles button presses is contained in `static/app.js` and the HTML can be found in `views/homepage.ejs` - it's a simple [EJS template](https://ejs.co/).  There are no CSS files in this repo, the CSS and Font Awesome JS files that Bulma uses are served from a CDN.
 
 ### Back End
 

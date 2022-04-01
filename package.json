@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/simonprickett/gitpod-express-redis.git"
+    "url": "git+https://github.com/redis-developer/gitpod-express-redis.git"
   },
   "keywords": [
     "redis",
@@ -19,9 +19,9 @@
   "license": "MIT",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/simonprickett/gitpod-express-redis/issues"
+    "url": "https://github.com/redis-developer/gitpod-express-redis/issues"
   },
-  "homepage": "https://github.com/simonprickett/gitpod-express-redis#readme",
+  "homepage": "https://github.com/redis-developer/gitpod-express-redis#readme",
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.3",
