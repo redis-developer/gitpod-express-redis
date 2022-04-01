@@ -119,7 +119,44 @@ The application's front end isn't our focus here.  It's a simple web application
 
 Now let's look at the code in `app.js` to see how to use Node Redis to connect to Redis Stack.
 
+#### Initializing Express and Redis 
+
 TODO
+
+#### Home Page
+
+TODO
+
+#### Pressing the Increment Button
+
+TODO
+
+#### Pressing the Reset Button
+
+TODO
+
+## Making Changes to the Application
+
+If you change the application code, nodemon will restart the server and pick up your changes immediately.  For example, let's make the Increment button add 10 to the value of the counter rather than 1...
+
+The node-redis `incrBy` function takes two parameters:
+
+* The key name holding the value to increment.
+* A number to increment the current value by.
+
+In `server.js`, find the line:
+
+```javascript
+const count = await client.incrBy(COUNTER_KEY_NAME, 1);
+```
+
+and change it to read:
+
+```javascript
+const count = await client.incrBy(COUNTER_KEY_NAME, 10);
+```
+
+Save your changes and try hitting the Increment button again... what happens to the value of the counter now?
 
 ## What Capabilities does Redis Stack have?
 
