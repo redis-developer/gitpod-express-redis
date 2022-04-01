@@ -140,5 +140,5 @@ Looking to learn more about Redis? Here's some useful resources:
 * Chat with us and get your questions answered on the [Redis Discord server](https://discord.gg/redis).
 * Subscribe to our [YouTube channel](https://www.youtube.com/c/Redisinc).
 * [redis.io](https://redis.io/) - Docmentation and reference materials.
-* [developer.redis.com](https://developer.redis.com) - the official Redis Developer Site.
+* [developer.redis.com](https://developer.redis.com) - the official Redis Developer site.
 * [Redis University](https://university.redis.com) - free online Redis courses.
