@@ -123,7 +123,15 @@ TODO
 
 ## What Capabilities does Redis Stack have?
 
-TODO
+[Redis Stack](https://redis.io/docs/stack/) includes the following:
+
+* An open source [Redis 6.2](https://redis.io/docs/getting-started/) server instance.
+* The [RediSearch](https://redis.io/docs/stack/search/) module, adding full text search and secondary indexing capabilities.
+* The [RedisJSON](https://redis.io/docs/stack/json/) module, which enables JSON as a native data type in Redis.
+* The [Redis Graph](https://redis.io/docs/stack/graph/) module, allowing you to store data in Redis as a graph and retrieve it with Cthe Cypher query language.
+* The [RedisBloom](https://redis.io/docs/stack/bloom/) module which implements additional probabilistic data structures such as Bloom and Cuckoo filters.
+* The [RedisTimeSeries](https://redis.io/docs/stack/timeseries/) module, which adds a time series data type and aggregations to Redis.
+* [RedisInsight](https://redis.io/docs/stack/insight/), a data visualization and management tool for Redis.
 
 ## Additional Resources
 
