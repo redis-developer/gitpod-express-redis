@@ -88,8 +88,8 @@ This starts the application using nodemon.  nodemon restarts the application for
 
 Now, open tabs in your browser for each of the following URLs:
 
-* Application: http://127.0.0.1:5000
-* RedisInsight: http://127.0.0.1:8001 (agree to the terms and conditions the first time you visit this URL)
+* Application: `http://127.0.0.1:5000`
+* RedisInsight: `http://127.0.0.1:8001` (agree to the terms and conditions the first time you visit this URL)
 
 The application should show that the current value of the counter is 0, and RedisInsight should show you an empty database with no keys yet.
 
