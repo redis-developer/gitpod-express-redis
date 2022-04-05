@@ -63,7 +63,7 @@ To run the application locally you'll need to install the following:
 First, clone the repo and install dependencies:
 
 ```bash
-$ git clone https://github.com/redis-developer/gitpod-flask-redis.git
+$ git clone https://github.com/redis-developer/gitpod-express-redis.git
 $ cd gitpod-express-redis
 $ npm install
 ```
