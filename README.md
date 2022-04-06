@@ -163,7 +163,7 @@ app.get('/', async (req, res) => {
 });
 ```
 
-Here, we use the Redis `GET` command to get the value stored at our counter's key, if any.  If the key doesn't exist yet (Redis returns `null`), we set return an initial value of `0`.  Note that we don't write this to Redis as there's no need (our increment button code will deal with that).
+Here, we use the Redis `GET` command to get the value stored at our counter's key, if any.  If the key doesn't exist yet (Redis returns `null`), we set `count `to an initial value of `0`.  Note that we don't write this to Redis as there's no need (our increment button code will deal with that).
 
 Finally, we render out the `homepage` EJS template (in `views/homepage.ejs`), passing it the value of `count` - this makes sure that when the homepage is rendered, the current value of the counter is there.
 
